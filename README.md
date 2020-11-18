@@ -23,7 +23,7 @@ remote: Compressing source files... done.
 remote: Building source:
 remote:
 remote: -----> Python app detected
-remote: -----> Installing python-3.7.4
+remote: -----> Installing python
 remote: -----> Installing pip
 remote: -----> Installing SQLite3
 remote: -----> Installing requirements with pip
@@ -62,7 +62,10 @@ Deploying a Python application couldn't be easier:
 
 A `Pipfile` and a `Pipfile.lock` must be present at the root of your application's repository.
 
-Current default Python Runtime: Python 3.6.7
+Current default Python Runtime: Python 3.6.12
+
+Alternatively, you can provide a `setup.py` file, or a `Pipfile`.
+Using `pipenv` will generate `runtime.txt` at build time if one of the field `python_version` or `python_full_version` is specified in the `requires` section of your `Pipfile`.
 
 Specify a Buildpack Version
 ---------------------------
@@ -77,29 +80,8 @@ Specify a Python Runtime
 
 Supported runtime options include:
 
-- `python-3.8.2`
-- `python-3.7.6`
-- `python-3.6.10`
-- `python-2.7.17`
-
-## Tests
-
-The buildpack tests use [Docker](https://www.docker.com/) to simulate
-Heroku's [stack images.](https://devcenter.heroku.com/articles/stack)
-
-To run the test suite:
-
-```
-make test
-```
-
-Or to test in a particular stack:
-
-```
-make test-heroku-18
-make test-heroku-16
-```
-
-The tests are run via the vendored
-[shunit2](https://github.com/kward/shunit2)
-test framework.
+- `python-3.9.0`
+- `python-3.8.6`
+- `python-3.7.9`
+- `python-3.6.12`
+- `python-2.7.18`
