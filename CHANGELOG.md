@@ -2,7 +2,6 @@
 
 ## Unreleased
 
-
 ## v185 (2020-11-12)
 
 - Error if the unsupported `BUILD_WITH_GEO_LIBRARIES` env var is set (#1115).
