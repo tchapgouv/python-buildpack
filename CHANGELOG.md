@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## v187 (2020-12-08)
+
+- Python 3.9.1 is now available (CPython) (#1127).
+
+## v186 (2020-11-18)
+
+- Update the `BUILD_WITH_GEO_LIBRARIES` error message (#1121).
+- Switch NLTK feature detection away from `sp-grep` (#1119).
+- Switch Django collectstatic feature detection away from `sp-grep` (#1119).
+- Remove vendored `sp-grep` script (#1119).
+- Remove vendored `pip-diff` script (#1118).
+- Remove vendored `pip-grep` script (#1116).
+
 ## v185 (2020-11-12)
 
 - Error if the unsupported `BUILD_WITH_GEO_LIBRARIES` env var is set (#1115).
